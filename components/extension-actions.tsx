@@ -6,8 +6,11 @@ import { useCopyToClipboard } from "@/lib/hooks/use-copy-to-clipboard"
 // prettier-ignore
 import { ActivityLogIcon, CaretSortIcon, ChatBubbleIcon, CheckIcon, Link2Icon, Pencil2Icon } from "@radix-ui/react-icons";
 
-import { IconOpenAI } from "@/components/ui/icons"
 import { useExtension } from "@/contexts/extension-context"
+
+
+
+
 
 interface ExtensionActionsProps {}
 

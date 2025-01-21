@@ -3,6 +3,7 @@ import type { Message } from "@/lib/constants"
 
 import Markdown from "./markdown"
 
+
 interface ChatItemProps {
   message: Message
 }
@@ -18,7 +19,7 @@ export default function ChatItem({ message }: ChatItemProps) {
         {message.role === "assistant" && !message.content ? (
           <span>{spinner}</span>
         ) : (
-          `${<Markdown markdown={message.content}/>} <br/>`
+          `${(<Markdown markdown={message.content} />)} <br/>`
         )}
       </div>
     </div>

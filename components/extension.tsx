@@ -2,9 +2,12 @@ import ExtensionActions from "@/components/extension-actions"
 import ExtensionPanels from "@/components/extension-panels"
 import { Collapsible, CollapsibleContent } from "@/components/ui/collapsible"
 import { useExtension } from "@/contexts/extension-context"
-import { useLocalStorage } from "@/lib/hooks/use-local-storage"
 import { getVideoData } from "@/utils/functions"
 import React from "react"
+
+
+
+
 
 export default function Extension() {
   //https://github.com/vantezzen/plasmo-state

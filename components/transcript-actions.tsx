@@ -12,6 +12,10 @@ import {
   MagnifyingGlassIcon
 } from "@radix-ui/react-icons"
 
+
+
+
+
 interface TranscriptActionsProps {
   jumpCurrentTime: () => void
 }

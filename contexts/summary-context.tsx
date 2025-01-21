@@ -7,6 +7,7 @@ import { usePort } from "@plasmohq/messaging/hook"
 
 import { useExtension } from "./extension-context"
 
+
 interface SummaryContext {
   summaryModel: Model
   setSummaryModel: (model: Model) => void
@@ -40,10 +41,10 @@ export function SummaryProvider({ children }: SummaryProviderProps) {
   const openAIKey = useAtomValue(openAIKeyAtom)
 
   const [summaryModel, setSummaryModel] = React.useState<Model>(
-      models.find((model) => model.value === "GPT-4o-mini")
+    models.find((model) => model.value === "GPT-4o-mini")
   )
   const [summaryPrompt, setSummaryPrompt] = React.useState<Prompt>(
-      prompts.find((prompt) => prompt.value === "default")
+    prompts.find((prompt) => prompt.value === "default")
   )
 
   const [summaryContent, setSummaryContent] = React.useState<string | null>(null)

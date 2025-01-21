@@ -3,6 +3,10 @@ import Providers from "@/components/providers"
 import cssText from "data-text:~style.css"
 import type { PlasmoCSConfig, PlasmoGetInlineAnchor } from "plasmo"
 
+
+
+
+
 const INJECTED_ELEMENT_ID = "#secondary.style-scope.ytd-watch-flexy"
 
 // This function is used to get the CSS style of the extension

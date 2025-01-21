@@ -4,6 +4,10 @@ import { useCopyToClipboard } from "@/lib/hooks/use-copy-to-clipboard"
 import { CheckIcon, ClipboardCopyIcon, ClockIcon } from "@radix-ui/react-icons"
 import { memo } from "react"
 
+
+
+
+
 type Transcript = {
   text: string
   startTime: number

@@ -4,6 +4,7 @@ import * as React from "react"
 
 import { useExtension } from "./extension-context"
 
+
 interface TranscriptContext {
   transcriptSearch: string
   setTranscriptSearch: (search: string) => void

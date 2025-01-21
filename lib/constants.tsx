@@ -1,4 +1,8 @@
-import { IconOpenAI, MetaLlama } from "@/components/ui/icons"
+import { IconOpenAI } from "@/components/ui/icons"
+
+
+
+
 
 export type Prompt = {
   value: string

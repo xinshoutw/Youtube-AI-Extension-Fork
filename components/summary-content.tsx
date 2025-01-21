@@ -4,6 +4,7 @@ import { useSummary } from "@/contexts/summary-context"
 
 import SummarySkeleton from "./summary-skeleton"
 
+
 export default function SummaryContent() {
   const { summaryIsGenerating, summaryContent, generateSummary } = useSummary()
 

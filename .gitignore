@@ -38,3 +38,7 @@ next-env.d.ts
 # Plasmo
 /.plasmo
 /build
+
+# User Preferences
+/.idea/vcs.xml
+/.idea/discord.xml

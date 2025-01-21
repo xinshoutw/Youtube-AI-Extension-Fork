@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button"
 import { IconSparkles } from "@/components/ui/icons"
-import { useChat } from "@/contexts/chat-context"
-import { useExtension } from "@/contexts/extension-context"
 import { cn } from "@/lib/utils"
 import { ArrowRightIcon } from "@radix-ui/react-icons"
 import React from "react"
 
-import { usePort } from "@plasmohq/messaging/hook"
+
+
+
 
 const exampleMessages = [
   {

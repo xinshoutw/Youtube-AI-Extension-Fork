@@ -8,6 +8,7 @@ import React from "react"
 
 import OpenAISetup from "./openai-setup"
 
+
 interface ExtensionPanelsProps {}
 
 export default function ExtensionPanels({}: ExtensionPanelsProps) {

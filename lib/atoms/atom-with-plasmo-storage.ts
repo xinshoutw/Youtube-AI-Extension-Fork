@@ -2,6 +2,7 @@ import { atom } from "jotai"
 
 import { storage } from "./storage"
 
+
 export const atomWithPlasmoStorage = <T>(key: string, initialValue: T) => {
   const baseAtom = atom<T>(initialValue)
   baseAtom.onMount = (setValue) => {

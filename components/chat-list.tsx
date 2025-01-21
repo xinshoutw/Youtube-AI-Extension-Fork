@@ -1,11 +1,11 @@
 import { useChat } from "@/contexts/chat-context"
 import type { Message } from "@/lib/constants"
-import { ChatScrollAnchor } from "@/lib/hooks/chat-scroll-anchor"
 import { cn } from "@/lib/utils"
 import { useEffect, useRef } from "react"
 
 import EmptyScreen from "./chat-empty-screen"
 import ChatItem from "./chat-item"
+
 
 interface ChatListProps {
   className?: string

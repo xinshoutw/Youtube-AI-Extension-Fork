@@ -1,5 +1,9 @@
 import { Skeleton } from "@/components/ui/skeleton"
 
+
+
+
+
 export default function TranscriptSkeleton() {
   return (
     <div className="space-y-4 w-full">

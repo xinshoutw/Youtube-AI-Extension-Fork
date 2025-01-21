@@ -1,5 +1,5 @@
-import { models, prompts, type Model, type Prompt } from "@/lib/constants"
-import { useState } from "react"
+import { models, type Model } from "@/lib/constants"
+import React from "react"
 
 // prettier-ignore
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -11,7 +11,10 @@ import { useExtension } from "@/contexts/extension-context"
 import { useCopyToClipboard } from "@/lib/hooks/use-copy-to-clipboard"
 import { cn } from "@/lib/utils"
 import { PlusIcon } from "@radix-ui/react-icons"
-import React from "react"
+
+
+
+
 
 interface ChatActionProps {
   className?: string

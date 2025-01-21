@@ -5,6 +5,7 @@ import React from "react"
 import TranscriptList from "./transcript-list"
 import TranscriptSkeleton from "./transcript-skeleton"
 
+
 interface TranscriptContentProps {
   ref: React.RefObject<HTMLDivElement>
 }

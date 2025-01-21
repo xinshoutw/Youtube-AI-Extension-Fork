@@ -12,6 +12,10 @@ import Textarea from "react-textarea-autosize"
 
 import { usePort } from "@plasmohq/messaging/hook"
 
+
+
+
+
 interface PromptFormProps {
   className?: string
 }
