@@ -39,8 +39,13 @@ export function SummaryProvider({ children }: SummaryProviderProps) {
   const port = usePort("completion")
   const openAIKey = useAtomValue(openAIKeyAtom)
 
-  const [summaryModel, setSummaryModel] = React.useState<Model>(models[0])
-  const [summaryPrompt, setSummaryPrompt] = React.useState<Prompt>(prompts[0])
+  const [summaryModel, setSummaryModel] = React.useState<Model>(
+      models.find((model) => model.value === "GPT-4o-mini")
+  )
+  const [summaryPrompt, setSummaryPrompt] = React.useState<Prompt>(
+      prompts.find((prompt) => prompt.value === "default")
+  )
+
   const [summaryContent, setSummaryContent] = React.useState<string | null>(null)
   const [summaryIsError, setSummaryIsError] = React.useState<boolean>(false)
   const [summaryIsGenerating, setSummaryIsGenerating] = React.useState<boolean>(false)

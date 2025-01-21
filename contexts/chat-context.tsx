@@ -13,7 +13,7 @@ interface ChatState {
 }
 
 const initialState: ChatState = {
-  chatModel: models[0],
+  chatModel: models.find((model) => model.value === "GPT-4o-mini"),
   chatIsGenerating: false,
   chatIsError: false,
   chatMessages: [],
