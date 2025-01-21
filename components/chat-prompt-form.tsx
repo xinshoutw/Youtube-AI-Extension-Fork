@@ -160,7 +160,7 @@ export default function PromptForm({ className }: PromptFormProps) {
           onKeyDown={onKeyDown}
           onKeyUp={onKeyUp}
           placeholder="Send a message."
-          className="min-h-[50px] w-full resize-none bg-transparent px-6 py-6 focus-within:outline-none text-[12px]"
+          className="min-h-[50px] w-full resize-none bg-transparent px-6 py-6 focus-within:outline-none text-[14px]"
           autoFocus
           spellCheck={false}
           autoComplete="off"

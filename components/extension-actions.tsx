@@ -24,7 +24,7 @@ export default function ExtensionActions({}: ExtensionActionsProps) {
 
   return (
     <div className="p-2.5 px-3 dark:bg-[#0f0f0f] dark:text-white rounded-md flex items-center justify-between border border-zinc-200 dark:border-zinc-800">
-      <IconOpenAI className="h-6 w-6 opacity-50 ml-2" />
+      {/*<IconOpenAI className="h-6 w-6 opacity-50 ml-2" />*/}
       <div className="flex justify-center items-center space-x-2">
         <div className="flex -space-x-px">
           <Button

@@ -14,11 +14,11 @@ export default function ChatItem({ message }: ChatItemProps) {
       <div className="flex h-10 w-10 shrink-0 select-none items-center justify-center rounded-md  border border-zinc-200 dark:border-zinc-800 -mt-1">
         {message.role === "user" ? <IconUser /> : <IconOpenAI />}
       </div>
-      <div className="ml-4 flex-1 space-y-2 overflow-hidden px-1">
+      <div className="ml-4 mb-5 flex-1 space-y-2 overflow-hidden px-1">
         {message.role === "assistant" && !message.content ? (
           <span>{spinner}</span>
         ) : (
-          <Markdown markdown={message.content} />
+          `${<Markdown markdown={message.content}/>} <br/>`
         )}
       </div>
     </div>

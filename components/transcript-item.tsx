@@ -86,7 +86,7 @@ function TranscriptItem({ item, searchInput }: TranscriptItemProps) {
         </Button> */}
       </div>
 
-      <p className="text-[10.5px] capitalize leading-7">
+      <p className="text-[14px] capitalize leading-7">
         {highlightText(item.text, searchInput)}
       </p>
     </div>

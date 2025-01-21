@@ -7,7 +7,7 @@ const INJECTED_ELEMENT_ID = "#secondary.style-scope.ytd-watch-flexy"
 
 // This function is used to get the CSS style of the extension
 export const getStyle = () => {
-  const baseFontSize = 12
+  const baseFontSize = 14
   let updatedCssText = cssText.replaceAll(":root", ":host(plasmo-csui)")
   const remRegex = /([\d.]+)rem/g
   updatedCssText = updatedCssText.replace(remRegex, (match, remValue) => {
