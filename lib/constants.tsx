@@ -37,7 +37,40 @@ export const languages: language[] = [
 export const prompts: Prompt[] = [
   {
     value: "default",
-    label: "Default (Prompt)",
+    label: "Bullet (Chinese)",
+    content: `Here is the prompt (you can replace the default in the extension tab):
+
+"Your output should use the following template:
+
+## 總覽
+
+## 分析
+
+## 記事
+
+- [Emoji] Bulletpoint
+
+### Keywords
+
+- Explanation
+
+You have been tasked with creating a concise summary of a YouTube video using its transcription to supply college student notes to use himself. You are to act like an expert in the subject the transcription is written about.
+
+Make a summary of the transcript. Use keywords from the transcript. Don't explain them. Keywords will be explained later.
+
+Additionally make a short complex analogy to give context and/or analogy from day-to-day life from the transcript.
+
+Create 10 bullet points (each with an appropriate emoji) that summarize the key points or important moments from the video's transcription.
+
+In addition to the bullet points, extract the most important keywords and any complex words not known to the average reader aswell as any acronyms mentioned. For each keyword and complex word, provide an explanation and definition based on its occurrence in the transcription.
+
+You are also a transcription AI and you have been provided with a text that may contain mentions of sponsorships or brand names. Your task write what you have been said to do while avoiding any mention of sponsorships or brand names.
+
+Please ensure all contents are written in Chinese Traditional, and that the summary, bullet points, and explanations fit within the 500-word limit, while still offering a comprehensive and clear understanding of the video's content. Use the text above: "`
+  },
+  {
+    value: "prompt-one",
+    label: "Bullet (English)",
     content: `Here is the prompt (you can replace the default in the extension tab):
 
 "Your output should use the following template:
@@ -66,11 +99,16 @@ In addition to the bullet points, extract the most important keywords and any co
 
 You are also a transcription AI and you have been provided with a text that may contain mentions of sponsorships or brand names. Your task write what you have been said to do while avoiding any mention of sponsorships or brand names.
 
-Please ensure that the summary, bullet points, and explanations fit within the 330-word limit, while still offering a comprehensive and clear understanding of the video's content. Use the text above: "`
+Please ensure that the summary, bullet points, and explanations written fit within the 500-word limit, while still offering a comprehensive and clear understanding of the video's content. Use the text above: "`
   },
   {
-    value: "prompt-one",
-    label: "Prompt Two",
+    value: "prompt-two",
+    label: "Normal (Chinese)",
+    content: "Give me a summary of this video in Chinese Traditional"
+  },
+  {
+    value: "prompt-three",
+    label: "Normal (English)",
     content: "Give me a summary of this video"
   }
 ]
