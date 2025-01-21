@@ -77,21 +77,27 @@ Please ensure that the summary, bullet points, and explanations fit within the 3
 
 export const models: Model[] = [
   {
-    value: "default",
-    label: "GPT-3.5",
-    content: "gpt-3.5-turbo",
-    icon: <IconOpenAI className="h-4 w-4 opacity-70" />
-  },
-  {
-    value: "GPT-4",
-    label: "GPT-4",
-    content: "gpt-4-turbo",
-    icon: <IconOpenAI className="h-4 w-4 opacity-70" />
-  },
-  {
     value: "GPT-4o",
     label: "GPT-4o",
     content: "gpt-4o",
+    icon: <IconOpenAI className="h-4 w-4 opacity-70" />
+  },
+  {
+    value: "GPT-4o-mini",
+    label: "GPT-4o-mini",
+    content: "gpt-4o-mini",
+    icon: <IconOpenAI className="h-4 w-4 opacity-70" />
+  },
+  {
+    value: "GPT-o1",
+    label: "GPT-o1",
+    content: "gpt-o1",
+    icon: <IconOpenAI className="h-4 w-4 opacity-70" />
+  },
+  {
+    value: "GPT-o1-mini",
+    label: "GPT-o1-mini",
+    content: "gpt-o1-mini",
     icon: <IconOpenAI className="h-4 w-4 opacity-70" />
   }
 ]

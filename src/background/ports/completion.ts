@@ -23,7 +23,7 @@ async function createCompletion(model: string, prompt: string, context: any) {
 
   return llm.beta.chat.completions.stream({
     messages: [{ role: "user", content: USER }],
-    model: model || "gpt-3.5-turbo",
+    model: model || "gpt-4o-mini",
     stream: true
   })
 }
